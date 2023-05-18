@@ -30,3 +30,4 @@ default:
     console.log('ne v etot raz');
     break;
 }
+
