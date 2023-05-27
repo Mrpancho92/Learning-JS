@@ -11,7 +11,6 @@ function start()  {
 } */
 
 // start();
-let answ = +prompt("Hello", "");
 const personalMovieDB = {
     count: 0,
     movies: {},
