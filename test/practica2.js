@@ -71,7 +71,8 @@ console.log( typeof(+"Infinity") );  //Ответ infinity
   
 /*   •	Верно ли сравнение: */ 
 console.log("Ёжик" > "Яблоко");
+console.log("б" < "авгде");
   
  /*  •	Чему равно */ 
-0 || "" || 2 || undefined || true || falsе 
+console.log(0 || "" || 2 || undefined || true || falsе );
    
