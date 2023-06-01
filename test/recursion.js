@@ -8,7 +8,7 @@ function pow(x,n) {
 }
 
 
-function pow(x,n) {
+function pow(x,n) { 
    if (n === 1) {
     return x;
    } else {
@@ -18,7 +18,7 @@ function pow(x,n) {
 
 
 
-console.log(pow(2, 1)); //2
+console.log(pow(2, 1)); 
 pow(2, 2); //4
 pow(2, 3); //8
 pow(2, 4);//16
