@@ -7,13 +7,13 @@
 //     return result;
 // }
 
-function pow(x,n) { 
+function pow(x,n) {
    if (n === 1) {
     return x;
    } else {
     // console.log(x);
     // console.log(pow(x, n - 1));
-    let z = 2 * pow(x, n - 1)  
+    let z = 2 * pow(x, n - 1)
     console.log(z);
     return z;
    }
@@ -123,22 +123,67 @@ const result = getTotalProgressByRecursion(students);
 console.log(result[0]/result[1]);
 
 
-console.log(typeof 45 != 'number');
-
 // задача на факториал
-function factorial (number) {
-    let num = 0;
-    let num2 = 0;
-    if ((typeof number) != 'number'  ||  number % 1 != 0 ) {
-        console.log('You tap is not a number');
-    } else if (number <= 0 ) {
-            console.log(1);
-        }
-     else {
-        num++;
-            num = number * (number - num);
-            num2 = num * (number - num);
-            return num2;
-        }
+function factorialMessage(number)
+{
+    if ((typeof number != 'number') || number % 1 != 0) {
+        return 'You tap a not a number!';
+    } else if (number <= 0) {
+        return 1;
     }
-    console.log(factorial(2));
+};
+
+function factorial(number) {
+    if (factorialMessage(number)) {
+        return factorialMessage(number);
+    } else if (number === 1) {
+        return number;
+    } else {
+        return number * factorial(number - 1);
+    }
+};
+
+console.log(factorial(4));
+
+
+// fac4
+//  return 4 * factorial(3);         return 24;
+// fac3
+// return 3 * factorial(2);          return 6; 
+// fac2
+// return 2 * factorial(1);          return 2;   
+// fac1
+// return 1;
+
+
+    // function factorial (number) {
+    
+    //     if ((typeof number) != 'number'  ||  number % 1 != 0 ) {
+    //         console.log('You tap is not a number');
+    //     } else if (number <= 0 ) {
+    //             console.log(1);
+    //         }
+    //      else {
+                
+    //             return factorial(number - 1);
+    //         }
+    //     }
+
+
+ /*   function factorial(n) {
+        if (typeof(n) !== 'number' || !Number.isInteger(n)) {
+            return "Ошибка, проверьте данные";
+        }
+    
+        if (n >= 1) {
+            return n * factorial(n - 1);
+        } else {
+            return 1;
+        }
+    
+        // Более короткий вариант, который вы можете встретить
+        // Но не учитывает отрицательные значения
+        return n ? n * factorial(n - 1) : 1;
+    }*/
+    
+    factorial(5)
