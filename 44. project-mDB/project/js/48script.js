@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             createMovieList(movieDB.movies, movieList);
         }
 
-        event.target.reset();
+       event.target.reset();
     });
 
     const deleteADv = (arr) => {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sortArr(films);
         films.forEach((film, i) => {
             parent.innerHTML += `<li class="promo__interactive-item">${i + 1} ${film}
-        <div class="delete" id = "${i}"></div></li>`;
+        <div class="delete"></div></li>`;
         });
 
         document.querySelectorAll('.delete').forEach((btn, i) => {
@@ -100,4 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
     makeChanges();
     createMovieList(movieDB.movies, movieList);
 
+
 });
+
+
+
+/* const someNums = [1, 2, 3];
+
+const addMessage = (itemm) => {
+    console.log(`Элемент массива: ${itemm}` );
+};
+someNums.forEach((itemm) => {
+    addMessage(itemm);
+}); */
+
