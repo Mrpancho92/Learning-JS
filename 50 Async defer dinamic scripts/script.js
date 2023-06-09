@@ -11,5 +11,7 @@ script.async = false;
 document.body.append(script);
 }
 
-loadScript("test.js");
+loadScript("test.js"); 
+loadScript("some.js");
+loadScript("test.js"); 
 loadScript("some.js");
