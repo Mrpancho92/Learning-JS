@@ -7,6 +7,23 @@
 //         amountOfPages(1095) => 401   
 //         amountOfPages(185) => 97
 
+function amountOfPages(summary){
+    let result = '';
+    let n = 0;
+
+    for (let i = 1; i <= summary; i++) {
+      result += i;
+      if (result.length === summary) {
+        n = i;
+        break;
+      }
+    }
+
+    return n;
+  }
+
+
+// ---------------------------------------------------------
 const amountOfPages = (number) => {
 let str = '';
 for ( let i = 1; i <= number; i++) {
