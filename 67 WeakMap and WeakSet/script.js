@@ -8,20 +8,21 @@ console.log(arr[0]); */
 
 // ---------------------------------------
 
-let user = {name: 'Ivan'};
+/* let user = {name: 'Ivan'};
 let map = new Map();
 map.set(user, 'data');
 user = null;
-console.log(map.keys());
+console.log(map.keys()); */
 
 // ---------------------------------------
 
-/* let user = {name: 'Ivan'};
-let map = new WeakMap();
+let user = {name: 'Ivan'};
+let map = new WeakMap();  //- ключами могут быть только объекты, если нет ссылки на этот объект и он сущ только внутри weakmap то он будет удален из это слабой карты
+//доступно set, get, delete, has
 map.set(user, 'data');
 user = null;
 console.log(map.has(user));
- */
+
 
 // ----------------------------------------
 
