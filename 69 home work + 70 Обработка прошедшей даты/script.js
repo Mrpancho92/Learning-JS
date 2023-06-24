@@ -1,11 +1,20 @@
-const comedate = Date.parse('2023-06-23'); 
+const comedate = Date.parse('2023-06-24'); 
 
 function getDateElements(comedate) {
-const t = comedate - (Date.parse(new Date()) + 60*180*1000),
+let days, hours, minutes, seconds;
+const t = comedate - (Date.parse(new Date()) + 60*180*1000);
+if (t <= 0) {
+    days = 0;
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+} else {
 days = Math.floor(t / (1000 * 60 * 60 * 24)),
 hours = Math.floor((t / (1000 * 60 * 60) % 24)),
 minutes = Math.floor((t / 1000 / 60) % 60),
 seconds = Math.floor((t / 1000) % 60);
+} 
+
 return {
     'total': t,
     'days' : days,
